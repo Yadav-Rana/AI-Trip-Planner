@@ -1,0 +1,110 @@
+/* Global styles */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1;
+  padding-top: 5rem; /* Space for fixed header */
+  padding-bottom: 2rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #2a6ef0 0%, #5b8ff9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .app-main {
+    padding-top: 4rem;
+  }
+}
+
+/* Header enhancements */
+.MuiAppBar-root {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+.header-logo-text {
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.9),
+    0 0 5px rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+/* Utility classes */
+.text-shadow {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-shadow {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}

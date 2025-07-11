@@ -1,0 +1,30 @@
+{
+  "name": "trip-planner",
+  "version": "1.0.0",
+  "description": "A MERN stack trip planner application with Gemini AI integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [
+    "mern",
+    "trip",
+    "planner",
+    "gemini",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "@fontsource/montserrat": "^5.2.5",
+    "@fontsource/poppins": "^5.2.5",
+    "framer-motion": "^12.6.3"
+  }
+}
